@@ -1,0 +1,20 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:react/recommended",
+    "next/core-web-vitals"
+  ],
+  "rules": {
+    "react/prop-types": "error",
+    "react/require-default-props": "off",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "nextjs-basic-template",
+  "version": "0.0.1",
+  "description": "Development basis for Next.js projects.",
+  "author": "Jay <me82852578@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prepare": "husky install",
+    "pre-commit": "yarn lint-staged",
+    "postversion": "git push --no-verify && git push --tags --no-verify "
+  },
+  "dependencies": {
+    "next": "latest",
+    "prop-types": "^15.8.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "eslint": "8.17.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-next": "12.1.6",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.1",
+    "sass": "^1.52.3",
+    "stylelint": "^14.9.1",
+    "stylelint-config-standard": "^26.0.0",
+    "stylelint-config-standard-scss": "^4.0.0"
+  }
+}
