@@ -2,6 +2,7 @@ import Head from 'next/head';
 
 export default function Home() {
   // const x = 2;
+  //
   return (
     <div className="container">
       <Head>
