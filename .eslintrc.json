@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "airbnb",
+    "next/core-web-vitals"
+  ],
+  "rules": {
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ]
+  }
+}
