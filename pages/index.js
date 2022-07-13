@@ -2,6 +2,8 @@ import Head from 'next/head';
 import { Card, HiComponent } from '../components';
 
 export default function Home() {
+  var x = 1;
+  var x = 2;
   return (
     <div className="container">
       <Head>
