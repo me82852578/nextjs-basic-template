@@ -5,6 +5,26 @@
 - IDE : [Vscode](https://code.visualstudio.com/)
   - [Eslint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
   - [Stylelint extension](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
+    - 💡 If you need format with keyboard shortcuts (Shift + Alt + F), add below config to VSCode's `keybindings.json`.
+      ```javascript
+      [
+          {
+              "key": "alt+shift+f",
+              "command": "stylelint.executeAutofix",
+              "when": "editorTextFocus && editorLangId == 'css'"
+          },
+          {
+              "key": "alt+shift+f",
+              "command": "stylelint.executeAutofix",
+              "when": "editorTextFocus && editorLangId == 'scss'"
+          },
+          {
+              "key": "alt+shift+f",
+              "command": "stylelint.executeAutofix",
+              "when": "editorTextFocus && editorLangId == 'less'"
+          }
+      ]
+      ```
   - [Prettier extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
   - [Vscode settings](.vscode\settings.json)
 - Package Manager : [Yarn](https://yarnpkg.com/)
