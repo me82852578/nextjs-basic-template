@@ -11,8 +11,7 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
-    "pre-commit": "yarn lint-staged",
-    "postversion": "git push --no-verify && git push --tags --no-verify "
+    "pre-commit": "yarn lint-staged"
   },
   "dependencies": {
     "next": "latest",
