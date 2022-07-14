@@ -72,7 +72,7 @@
 ## Versioning
 
 - **Follow [Semantic Versioning](https://semver.org/).**
-- Use [yarn version](https://classic.yarnpkg.com/en/docs/cli/version) to update the version of project via the command line e.g.,<br/>( 💡 Only the master branch is required. )
+- You can use [yarn version](https://classic.yarnpkg.com/en/docs/cli/version) to update the version of project via the command line e.g.,<br/>
   - ```
     yarn version
     ```
