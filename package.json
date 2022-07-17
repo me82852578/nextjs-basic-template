@@ -11,7 +11,7 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
-    "pre-commit": "yarn lint-staged"
+    "pre-commit": "echo hi"
   },
   "dependencies": {
     "next": "latest",
