@@ -5,8 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: webfactory/ssh-agent
-        uses: webfactory/ssh-agent@v0.5.4
+      - uses: webfactory/ssh-agent@v0.5.4
           with:
             ssh-private-key: ${{ secrets.home }}
       - name: Install modules
