@@ -4,10 +4,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Install modules
-      run: yarn
-    - name: Run lint
-      run: yarn lint && npx stylelint '**/*.{scss,css}'
-    - name: build
-      run: ssh me828@220.134.44.49 echo hello
+      - uses: actions/checkout@v2
+        with:
+          ssh-private-key: ${{ secrets.home }}
+      - name: Install modules
+        run: yarn
+      - name: Run lint
+        run: yarn lint && npx stylelint '**/*.{scss,css}'
+      - name: build
+        run: ssh me828@220.134.44.49 echo hello
