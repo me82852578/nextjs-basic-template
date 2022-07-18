@@ -1,11 +1,21 @@
-name: CI
-on: push
+name: CD
+
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - closed
 jobs:
-  build:
+  deploy:
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Install modules
-      run: yarn
-    - name: Run lint
-      run: yarn lint && npx stylelint '**/*.{scss,css}'
+    - name: SSH Remote Commands
+      uses: appleboy/ssh-action@v0.1.4
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        script: whoami
