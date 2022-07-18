@@ -2,7 +2,7 @@ import React from 'react';
 
 function HiComponent() {
   return (
-    <div>HiComponent !!!!!</div>
+    <div>HiComponent !!</div>
   );
 }
 
