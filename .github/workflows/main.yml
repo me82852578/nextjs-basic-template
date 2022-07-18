@@ -18,4 +18,4 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
-        script: whoami
+        script: cd /d J:\DESK\dev\nextjs-basic-template && yarn build
