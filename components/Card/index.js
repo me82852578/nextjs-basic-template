@@ -7,7 +7,7 @@ export default function Card({ title = '' }) {
   return (
     <div className={styles.customCardRoot}>
       <CardHeader title={title} />
-      Hello card 2022-07-18
+      Hello card 2022
     </div>
   );
 }
