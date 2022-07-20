@@ -2,6 +2,8 @@ import Head from 'next/head';
 import { Card, HiComponent } from '../components';
 
 export default function Home() {
+  const x = 1;
+  console.info(x);
   return (
     <div className="container">
       <Head>
@@ -12,8 +14,8 @@ export default function Home() {
       <HiComponent />
       <main>
         <h1 className="title">
-          Welcome to
-          <a href="https://nextjs.org">Next.js!</a>
+          聽話
+          <a href="https://nextjs.org">讓我看看</a>
         </h1>
 
         <p className="description">
